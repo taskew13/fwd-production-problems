@@ -36,10 +36,26 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #two,
 #one {
   height: 100vw;
+  width: 100vw;
 }
 
 @media screen and (min-width: 600px) {
-
+  #content {
+    height: 100vw;
+    width: 50vw;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  #one {
+    width: auto;
+    flex-grow: 2;
+    flex-wrap: wrap;
+  }
+  #two {
+    width: auto;
+    flex-grow: 2;
+    flex-wrap: wrap;
+  }
 }
 
 @media screen and (min-width: 800px) {
