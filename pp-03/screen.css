@@ -41,17 +41,13 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 @media screen and (min-width: 600px) {
   #content {
+    display: flex;
     height: 100vw;
     width: 50vw;
-    display: flex;
     flex-direction: column-reverse;
   }
+  #two,
   #one {
-    width: auto;
-    flex-grow: 2;
-    flex-wrap: wrap;
-  }
-  #two {
     width: auto;
     flex-grow: 2;
     flex-wrap: wrap;
@@ -59,5 +55,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 @media screen and (min-width: 800px) {
-
+  #content {
+    display: flex;
+    height: 100vw;
+    width: 50vw;
+    flex-basis: auto;
+    flex-direction: row-reverse;
+    flex-grow: 2;
+  }
 }
