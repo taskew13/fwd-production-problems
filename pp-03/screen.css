@@ -36,7 +36,6 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 #two,
 #one {
   height: 100vw;
-  width: 100vw;
 }
 
 @media screen and (min-width: 600px) {
