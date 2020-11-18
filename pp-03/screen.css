@@ -53,12 +53,10 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 }
 
 @media screen and (min-width: 800px) {
-  #content {
-    display: flex;
-    height: 100vw;
-    width: 50vw;
-    flex-basis: auto;
-    flex-direction: row-reverse;
-    flex-grow: 2;
+  #three,
+  #two,
+  #one {
+    flex: 1 0 33%;
+    height: 33vw;
   }
 }
