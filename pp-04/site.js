@@ -3,7 +3,7 @@
   call outputs the correct value for x (5). You must still use
   `x` as the variable inside the function, however.
 */
-/*
+
 x = 5;
 
 function double(num) {
@@ -13,7 +13,7 @@ function double(num) {
 
 double(6);
 console.log('The value of x is', x, '-- it should be 5.');
-*/
+
 /*
   Step 2. Rewrite the JavaScript `double()` function above so that
   it does not pollute the global namespace: that is, neither its
@@ -40,3 +40,19 @@ console.log('The value of x is', x, '-- it should be 5.');
   so that non-number values passed into the function are handled
   in some reasonable way.
 */
+
+(function() {
+  var x=5;
+  function double(num) {
+    if (typeof(num) = "number") {
+      var x = num * 2;
+      return x;
+    }
+    else{
+      return ('Input is not correct number')
+    }
+  }
+
+double(6);
+console.log('The value of x is', x, '-- it should be 5.');
+})();
